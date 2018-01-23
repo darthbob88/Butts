@@ -10,13 +10,13 @@ if not exist tools md tools
 cd tools
 if not exist r md r
 cd r
-if exist ruby-2.2.4-x64-mingw32 goto end
+if exist ruby-2.4.3-x64-mingw32 goto end
 
 echo No Ruby, need to get it!
 
 REM Get Ruby and Rails
 REM 64bit
-curl -o ruby224.zip -L https://bintray.com/artifact/download/oneclick/rubyinstaller/ruby-2.2.4-x64-mingw32.7z?direct
+curl -o ruby224.zip -L https://bintray.com/artifact/download/oneclick/rubyinstaller/ruby-2.4.3-x64-mingw32.7z?direct
 REM Azure puts 7zip here!
 echo START Unzipping Ruby
 SetLocal DisableDelayedExpansion & d:\7zip\7za x -xr!*.ri -y ruby224.zip > rubyout
