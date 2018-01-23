@@ -10,13 +10,13 @@ if not exist tools md tools
 cd tools
 if not exist r md r
 cd r
-if exist ruby-2.4.3-x64-mingw32 goto end
+if exist ruby-2.2.4-x64-mingw32 goto end
 
 echo No Ruby, need to get it!
 
 REM Get Ruby and Rails
 REM 64bit
-curl -o ruby224.zip -L https://bintray.com/artifact/download/oneclick/rubyinstaller/ruby-2.4.3-x64-mingw32.7z?direct
+curl -o ruby224.zip -L https://bintray.com/artifact/download/oneclick/rubyinstaller/ruby-2.2.4-x64-mingw32.7z?direct
 REM Azure puts 7zip here!
 echo START Unzipping Ruby
 SetLocal DisableDelayedExpansion & d:\7zip\7za x -xr!*.ri -y ruby224.zip > rubyout
@@ -40,7 +40,7 @@ REM Setup DevKit
 ruby DevKit\dk.rb install
 
 REM Update Gem223 until someone fixes the Ruby Windows installer https://github.com/oneclick/rubyinstaller/issues/261
-curl -L -o update.gem https://github.com/rubygems/rubygems/releases/download/v2.6.8/rubygems-update-2.6.8.gem
+curl -L -o update.gem https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem
 call gem install --local update.gem
 call update_rubygems --no-ri --no-rdoc > updaterubygemsout
 ECHO What's our new Rubygems version?
@@ -50,6 +50,9 @@ call gem uninstall rubygems-update -x
 popd
 
 :end
+
+ECHO What's our new Rubygems version?
+call gem --version
 
 REM Need to be in Reposistory
 cd %DEPLOYMENT_SOURCE%
