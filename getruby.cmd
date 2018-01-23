@@ -51,6 +51,9 @@ popd
 
 :end
 
+REM What version of Ruby are we using anyway? 
+call ruby -v
+
 REM Need to be in Reposistory
 cd %DEPLOYMENT_SOURCE%
 cd
