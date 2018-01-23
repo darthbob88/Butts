@@ -9,6 +9,7 @@ pushd D:\home\site\deployments
 if not exist tools md tools
 cd tools
 del r
+echo y
 if not exist r md r
 cd r
 if exist ruby-2.2.4-x64-mingw32 goto end
