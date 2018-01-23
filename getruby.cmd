@@ -40,7 +40,7 @@ REM Setup DevKit
 ruby DevKit\dk.rb install
 
 REM Update Gem223 until someone fixes the Ruby Windows installer https://github.com/oneclick/rubyinstaller/issues/261
-curl -L -o update.gem https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem
+curl -L -o update.gem https://github.com/rubygems/rubygems/releases/download/v2.6.8/rubygems-update-2.6.8.gem
 call gem install --local update.gem
 call update_rubygems --no-ri --no-rdoc > updaterubygemsout
 ECHO What's our new Rubygems version?
