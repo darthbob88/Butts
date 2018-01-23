@@ -50,6 +50,9 @@ REM call gem uninstall rubygems-update -x
 popd
 
 :end
+ECHO What's our new Rubygems version?
+call gem --version
+call ruby -v
 
 REM Need to be in Reposistory
 cd %DEPLOYMENT_SOURCE%
