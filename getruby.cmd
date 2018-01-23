@@ -9,7 +9,6 @@ pushd D:\home\site\deployments
 if not exist tools md tools
 cd tools
 rd r /s /q
-echo y
 if not exist r md r
 cd r
 if exist ruby-2.2.4-x64-mingw32 goto end
@@ -36,7 +35,7 @@ ruby DevKit\dk.rb init
 
 REM Tell DevKit where Ruby is
 echo --- > config.yml
-echo - D:/home/site/deployments/tools/r/ruby-2.2.4-x64-mingw32 >> config.yml
+echo - D:/home/site/deployments/tools/r/ruby-2.3.3-x64-mingw32 >> config.yml
 
 REM Setup DevKit
 ruby DevKit\dk.rb install
