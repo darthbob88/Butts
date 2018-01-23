@@ -10,7 +10,7 @@ if not exist tools md tools
 cd tools
 if not exist r md r
 cd r
-if exist ruby-2.2.4-x64-mingw32 goto end
+REM if exist ruby-2.2.4-x64-mingw32 goto end
 
 echo No Ruby, need to get it!
 
