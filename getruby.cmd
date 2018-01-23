@@ -8,7 +8,7 @@ REM I am in the repository folder
 pushd D:\home\site\deployments
 if not exist tools md tools
 cd tools
-del r
+rd r /s /q
 echo y
 if not exist r md r
 cd r
