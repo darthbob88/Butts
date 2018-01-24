@@ -8,10 +8,9 @@ REM I am in the repository folder
 pushd D:\home\site\deployments
 if not exist tools md tools
 cd tools
-rd r /s /q
 if not exist r md r
 cd r
-if exist ruby-2.2.4-x64-mingw32 goto end
+if exist ruby-2.3.3-x64-mingw32 goto end
 
 echo No Ruby, need to get it!
 
@@ -53,6 +52,7 @@ popd
 :end
 ECHO What's our new Rubygems version?
 call gem --version
+ECHO And Ruby?
 call ruby -v
 
 REM Need to be in Reposistory
