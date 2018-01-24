@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "YOUR MOTHER"
+title:  "TEST POST"
 date:   2018-01-22 11:35:01 -0800
 categories: scenario
 permalink: /scenario/TEST/
