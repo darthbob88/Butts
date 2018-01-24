@@ -4,6 +4,9 @@ title:  "YOUR MOTHER"
 date:   2018-01-22 11:35:01 -0800
 categories: scenario
 permalink: /scenario/TEST
+redirect_from:
+  - /butts
+  - /foo
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and push it to Github to see your new posts in their new site. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
