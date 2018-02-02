@@ -1,0 +1,99 @@
+{
+	"displayname": "Migrate SQL Server to SQL Server",
+	"emailmessage": "Check out the migration process from SQL Server to SQL Server here:",
+	"description": "Customers and partners have touted SQL Server 2016 as the best release. The SQL Server 2016 is the most secure, dependable, and integrated system in the industry.",
+	"steps": [
+		{
+			"name": "Why migrate?",
+
+			"items": [
+				{
+					"filelocation": "Rationale2017",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlOverview",
+					"actions": []
+				},
+				{
+					"filelocation": "ProductLicensing",
+					"actions": []
+				},
+				{
+					"filelocation": "OnPremVsCloud",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlUpgradePaths",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Pre-Migration",
+			"items": [
+				{
+					"filelocation": "SqlDiscover",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlAssessment",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Migration",
+			"items": [
+				{
+					"filelocation": "SqlMigration",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Post-Migration",
+			"items": [
+				{
+					"filelocation": "SqlRemediateApps",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlPerformTests",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlOptimization",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlDataSync",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlRollback",
+					"actions": []
+				}
+			]
+		}
+	],
+	"casestudies": [
+		{
+			"filelocation": "Convergent"
+		},
+		{
+			"filelocation": "Derivco"
+		},
+		{
+			"filelocation": "SBI"
+		}
+	],
+	"partners": [
+		{
+			"filelocation": "Fujitsu"
+		}
+	]
+}

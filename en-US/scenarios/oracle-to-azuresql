@@ -1,0 +1,81 @@
+{
+	"displayname": "Migrate Oracle to Azure SQL Database",
+	"emailmessage": "Check out the migration process from Oracle to Azure SQL Database here:",
+	"description": "Azure SQL Database is the industry leading data platform, boasting many unmatched benefits. There is no better time than now to make the transition from Oracle.",
+	"steps": [
+		{
+			"name": "Why migrate?",
+			"items": [
+				{
+					"filelocation": "AzureRationale",
+					"actions": []
+				},
+				{
+					"filelocation": "Overview",
+					"actions": []
+				}
+			]
+		},
+		{
+			"name": "Pre-Migration",
+
+			"items": [
+				{
+					"filelocation": "OracleAzureAssessment",
+					"actions": [
+						{
+							"actiontype": "download",
+							"filelocation": "SSMADownload"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Migration",
+			"items": [
+				{
+					"filelocation": "OracleAzureMigration",
+					"actions": [
+						{
+							"actiontype": "download",
+							"filelocation": "SSMADownload"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Post-Migration",
+
+			"items": [
+				{
+					"filelocation": "RemediateApps",
+					"actions": []
+				},
+				{
+					"filelocation": "PerformTests",
+					"actions": []
+				},
+				{
+					"filelocation": "Optimization",
+					"actions": []
+				},
+				{
+					"filelocation": "DataSync",
+					"actions": []
+				},
+				{
+					"filelocation": "Cutover",
+					"actions": []
+				}
+			]
+		}
+	],
+	"casestudies": [
+
+	],
+	"partners": [
+
+	]
+}

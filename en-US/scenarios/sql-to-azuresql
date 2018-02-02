@@ -1,0 +1,79 @@
+{
+	"displayname": "Migrate SQL Server to Azure SQL Database",
+	"emailmessage": "Check out the migration process from SQL Server to Azure SQL Database here:",
+	"description": "Azure SQL Database delivers predictable performance at multiple service levels, making the switch from SQL Server easier than ever.",
+	"steps": [
+		{
+			"name": "Why migrate?",
+			"items": [
+				{
+					"filelocation": "AzureRationale",
+					"actions": []
+				},
+				{
+					"filelocation": "AzureSqlOverview",
+					"actions": []
+				},
+				{
+					"filelocation": "AzureUpgradePaths",
+					"actions": []
+				}				
+			]
+		},
+		{
+			"name": "Pre-Migration",
+			"items": [
+				{
+					"filelocation": "AzureSqlAssessment",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Migration",
+			"items": [
+				{
+					"filelocation": "AzureSqlMigration",
+					"actions": []
+				},
+				{
+					"filelocation": "AzureSqlDataMigration",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Post-Migration",
+			"items": [
+				{
+					"filelocation": "SqlRemediateApps",
+					"actions": []
+				},
+				{
+					"filelocation": "PerformTests",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlOptimization",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlDataSync",
+					"actions": []
+				},
+				{
+					"filelocation": "SqlRollback",
+					"actions": []
+				}
+			]
+		}
+	],
+	"casestudies": [
+		
+	],
+	"partners": [
+		
+	]
+}

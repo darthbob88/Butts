@@ -1,0 +1,92 @@
+{
+	"displayname": "Migrate Access to Azure SQL Database",
+	"emailmessage": "Check out the migration process from Access to Azure SQL Database here:",
+	"description": "The Azure SQL Database is capable of handling mission-critical workloads predictably and efficiently, aiding the transition process from other databases, like Access.",
+	"steps": [
+		{
+			"name": "Why migrate?",
+			"items": [
+				{
+					"filelocation": "AzureRationale",
+					"actions": [
+						{
+							"actiontype": "download",
+							"filelocation": "pricingcalculator"
+						},
+						{
+							"actiontype": "download",
+							"filelocation": "AzureTCO"
+						},
+						{
+							"filelocation": "Overview",
+							"actions": []
+						}
+					]
+				}
+			]
+
+		},
+
+		{
+			"name": "Pre-Migration",
+
+			"items": [
+				{
+					"filelocation": "AccessAzureAssessment",
+					"actions": []
+				}
+			]
+		},
+
+		{
+			"name": "Migration",
+			"items": [
+				{
+					"filelocation": "AccessAzureMigration",
+					"actions": []
+				}
+			]
+		},
+		{
+			"name": "Post-Migration",
+			"items": [
+				{
+					"filelocation": "RemediateApps",
+					"actions": []
+				},
+				{
+					"filelocation": "PerformTests",
+					"actions": []
+				},
+				{
+					"filelocation": "Optimization",
+					"actions": []
+				},
+				{
+					"filelocation": "DataSync",
+					"actions": []
+				},
+				{
+					"filelocation": "Cutover",
+					"actions": []
+				}
+			]
+		}
+	],
+	"casestudies": [
+		{
+			"filelocation": "Sumitomo"
+		},
+		{
+			"filelocation": "KDS"
+		},
+		{
+			"filelocation": "PTC"
+		}
+	],
+	"partners": [
+		{
+			"filelocation": "Fujitsu"
+		}
+	]
+}
