@@ -3,22 +3,21 @@ The metadata section looks like this:
   ```
 ---
 layout: page-steps
-language: <programming language>
-title: <operating system>
-permalink: /<programming language>/<operating system>/
+source: <source DB>
+target: <target DB>
+permalink: /<source DB>/<target DB>/
 redirect_from:
-  - /<programming language>/
-  - /<programming language>/<operating system>/step/
-  - /<programming language>/<operating system>/step/<step number>
+  - /<source DB>/<target DB>/step/
+  - /<source DB>/<target DB>/step/<step number>
 ---
   ```
   
   ## Attributes and values
 
-**language**: Required; Programming language the tutorial is for. Example: C#, Python, Ruby, etc.
+**source**: Required; DB the customer is currently using. Oracle, SQL Server, MySQL.
 
-**title**: Required; Operating system/platform for the tutorial. Example: Ubuntu, RHEL, SLES, Windows, macOS.
+**target**: Required; DB the customer is planning to migrate to. Example: Azure SQL, SQL Server, Azure MySQL.
 
-**permalink**: Required; Programming language and the operating system the tutorial is for. If this is a **C#** tutorial, please use the full word "csharp" in this section. 
+**permalink**: Required.
 
-**redirect_from**: Required; Programming language, operating system, and step number. If this is a **C#** tutorial, please use the full word "csharp" in this section. 
+**redirect_from**: Required. 

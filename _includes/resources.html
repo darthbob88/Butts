@@ -18,7 +18,7 @@
             <ul class="sql-resources-items">
                 {% for resource in site.resources %}
                     {% assign item = resource[1] %}
-                    {% if item.condition != null or item.condition == page.language %}
+                    {% if item.condition == null or item.condition == page.language %}
                         <li class="sql-resources-item">
                             {{item.pre}} <a class="sql-resources-link" href="{{item.link}}" target="_blank">{{item.text}}</a>
                         </li>

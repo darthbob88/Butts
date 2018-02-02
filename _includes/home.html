@@ -4,37 +4,45 @@
         Learn about how to use <a href="http://aka.ms/mlsqldev"> SQL Server Machine Learning Services with Python and R</a>
     </h3>
 
+    {% if site.commonChoices %}
     <div class="sql-home-items">
+        {% for option in site.commonChoices %}
+        {% assign item = option[1] %}
         <div class="sql-home-item">
-            <img class="sql-home-icon" src="http://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/assets/images/r-logo.png" alt="">
             <div class="sql-home-itemflex">
-                <a class="sql-home-link sql-home-link--spaced" href="https://microsoft.github.io/sql-ml-tutorials/R/rentalprediction">Build a Predictive model</a>
+                <a class="sql-home-link sql-home-link--spaced" href="{{item.link}}">{{item.text}}</a>
             </div>
         </div>
 
-        <div class="sql-home-item">
-            <img class="sql-home-icon" src="http://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/assets/images/menu/python.png" alt="">
-            <div class="sql-home-itemflex">
-                <a class="sql-home-link sql-home-link--spaced" href="https://microsoft.github.io/sql-ml-tutorials/python/rentalprediction/">Build a Predictive model</a>
-                <i class="sql-new"></i>
-            </div>
-        </div>
+        {% endfor %}
     </div>
+    {% endif %}
 
     <footer class="sql-home-footer">
+        {% if site.data.partners %}
+        <!--
+        title: Ispirer
+        text: Ispirer offers migration tools and services for Microsoft SQL Server and others.
+        url: http://www.ispirer.com/solutions/migration-to-the-microsoft-technology-stack
+        logoUrl: https://mpbdevcontent.azureedge.net/Images/Ispirer_logo.png
+        logoAltText: Ispirer Migration and Modernization Toolkit (MnMTK) 2015
+        -->
+        {% for partner in site.data.partners %}
+        {% assign item = partner[1] %}
         <div class="sql-home-items">
             <div class="sql-home-item sql-home-item--column">
-                <a href="https://db-engines.com/en/blog_post/67" target="_blank"><img class="sql-home-icon sql-home-icon--block" src="http://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/assets/images/award.png" alt=""></a>
-                <span class="sql-home-text">Microsoft SQL Server was named DBMS of the Year, 2016!</span>
-            </div>
-
-            <div class="sql-home-item sql-home-item--column">
-                <a href="https://channel9.msdn.com/Events/Build/2017" target="_blank"><img class="sql-home-icon sql-home-icon--block" src="http://sqlchoice.azurewebsites.net/en-us/sql-server/developer-get-started/assets/images/channel9.png" alt=""></a>
-                <span class="sql-home-text">Watch Build videos on Channel 9!</span>
+                <a href="{{item.url}}" target="_blank">
+                    <img class="sql-home-icon sql-home-icon--block"
+                         src="{{item.logoUrl}}" alt="{{item.logoAltText}}">
+                </a>
+                <span class="sql-home-text">{{item.text}}</span>
             </div>
         </div>
+        {% endfor %}
+        {% endif %}
     </footer>
 
+<!-- TODO: LOCALIZE! LOCALIZE! >:( -->
     <span class="sql-home-message">
         Don't see a programming language you were looking for? Join the conversation on <a class="sql-home-link sql-home-link--underline" href="{{site.gitter}}" target="_blank">Gitter</a>.
         <br>

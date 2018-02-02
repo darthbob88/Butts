@@ -14,123 +14,120 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Data Migration Playbook
+subtitle: A step-by-step guide for migrating data to a more modern solution.
 email: v-raypri@microsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-#url: https://sqlchoice.azurewebsites.net
+#url: https://jekylltest.azurewebsites.net
 #baseurl: /en-us/sql-server/developer-get-started
 
 disqus:
-  shortname: sqlchoice
+    shortname: sqlchoice
 
-gitter: https://gitter.im/Microsoft/mssql-developers
+gitter: https://gitter.im/Microsoft/MigrationPlaybook
 
 steps:
   1: Set up your environment
-  2: Create $$ application with SQL server
-  3: Make your $$ app up to 100x faster
+  2: Migrate your data to $$
+  3: Wrap-up and clean-up
 
 menu:
-  C#:
-    logo: csharp.png
-    pages:
-      macOS: csharp/macos
-      RHEL: csharp/rhel
-      SLES*: csharp/sles
-      Ubuntu: csharp/ubuntu
-      Windows: csharp/win
-  Java:
-    logo: java.png
-    pages:
-      macOS: java/mac
-      RHEL: java/rhel
-      SLES: java/sles
-      Ubuntu: java/ubuntu
-      Windows: java/windows
-  Node.js:
-    logo: node.png
-    pages:
-      macOS: node/mac
-      RHEL: node/rhel
-      SLES: node/sles
-      Ubuntu: node/ubuntu
-      Windows: node/windows
-  PHP:
-    logo: php.png
-    pages:
-      macOS: php/mac
-      RHEL: php/rhel
-      SLES: php/sles
-      Ubuntu: php/ubuntu
-      Windows: php/windows
-  Python:
-    logo: python.png
-    pages:
-      macOS: python/mac
-      RHEL: python/rhel
-      SLES: python/sles
-      Ubuntu: python/ubuntu
-      Windows: python/windows
-  Ruby:
-    logo: ruby.png
-    pages:
-      macOS: ruby/mac
-      RHEL: ruby/rhel
-      Ubuntu: ruby/ubuntu
-  Go:
-    logo: golang.png
-    pages:
-      macOS*: go/mac
-      RHEL*: go/rhel
-      SLES*: go/sles
-      Ubuntu*: go/ubuntu
-      Windows*: go/windows
+    sqlserver:
+        logo: sql-server.png
+        pages:
+            Azure SQL: sqlserver/azuresql
+            sqlserver: sqlserver/sqlserver
+    oracle:
+        logo: oracle.png
+        pages:
+           azuresql: oracle/azuresql
+           sqlserver: oracle/sqlserver
+           azurepostgresql: oracle/azurepostgresql
+    db2:
+        logo: DB2.png
+        pages:
+            azuresql: db2/azuresql
+            sqlserver: db2/sqlserver
+    mysql:
+        logo: MySQL.png
+        pages:
+            azuresql: mysql/azuresql
+            sqlserver: mysql/sqlserver
+            azuremysql: mysql/azuremysql
+    access:
+        logo: Access.png
+        pages:
+            azuresql: access/azuresql
+            sqlserver: access/sqlserver
+    sybase:
+        logo: SAP-ASE.png
+        pages:
+            azuresql: sybase/azuresql
+            sqlserver: sybase/sqlserver
+    postgresql:
+        logo: PostgreSQL.png
+        pages:
+            azurepostgresql: postgresql\azurepostgresql
+    mongo:
+        logo: MongoDB.png
+        pages:
+            cosmos: mongo\cosmos
+    azuretable:
+        logo: Azure-Table-Storage.png
+        pages:
+            cosmos: azuretable\cosmos
+            
+commonChoices:
+    sql-azuresql:
+        text: SQL Server => Azure SQL Database
+        link: sqlserver/azuresql
+    sql-sqlserver:
+        text: SQL Server => SQL Server
+        link: sqlserver/sqlserver
+    oracle-sql:
+        text: Oracle => SQL Server
+        link: oracle/sqlserver
+    db2-sql:
+        text: DB2 => Azure SQL Database
+        link: db2/azuresql
       
 resources:
-  sqlserver-csharp:
-    pre: Check out what's new with
-    text: SQL Server + C# on Channel 9
-    link: https://channel9.msdn.com/Events/Connect/2016/151
-    condition: C#
-  sqlserver-java:
-    pre: Check out what's new with
-    text: SQL Server + Java on Channel 9
-    link: https://channel9.msdn.com/Events/Connect/2016/152
-    condition: Java
-  sqlserver-node:
-    pre: Check out what's new with
-    text: SQL Server + Node.js on Channel 9
-    link: https://channel9.msdn.com/Events/Connect/2016/160
-    condition: Node.js
-  sqlserver-php:
-    pre: Check out what's new with
-    text: SQL Server + PHP on Channel 9
-    link: https://channel9.msdn.com/Events/Connect/2016/182
-    condition: PHP
-  sqlserver-py:
-    pre: Check out what's new with
-    text: SQL Server + Python on Channel 9
-    link: https://channel9.msdn.com/Events/Connect/2016/189
-    condition: Python
-  github:
-    pre: Browse more SQL Server code samples (In-Memory, Dynamic Data Masking, R, etc.) on our
-    text: GitHub repository
-    link: https://github.com/Microsoft/sql-server-samples/tree/master/samples/
-  linux:
-    pre: Learn more about
-    text: SQL Server on Linux
-    link: https://channel9.msdn.com/Events/Connect/2016/101
-  connect:
-    pre: Watch more
-    text: Connect(); event videos
-    link: https://channel9.msdn.com/Events/Connect/2016
-  labs:
-    pre: Browse our
-    text: Virtual Labs Gallery
-    link: https://technet.microsoft.com/en-us/virtuallabs
+    sqlserver-csharp:
+        pre: Check out what's new with
+        text: SQL Server + C# on Channel 9
+        link: https://channel9.msdn.com/Events/Connect/2016/151
+        condition: C#
+    connect:
+        pre: Watch more
+        text: Connect(); event videos
+        link: https://channel9.msdn.com/Events/Connect/2016
+    labs:
+        pre: Browse our
+        text: Virtual Labs Gallery
+        link: https://technet.microsoft.com/en-us/virtuallabs
+
+case-studies:
+    Floatel:
+        title: Floatel International
+        text: Maritime Firm Improves Insight and Efficiency with Microsoft Solution
+        url: https://customers.microsoft.com/en-us/story/maritime-firm-improves-insight-and-efficiency-with-mic
+        logoUrl: https://mpbdevcontent.azureedge.net/Images/FloatelLogo.png
+        logoAltText: Floatel
+    Infosys:
+        title: Infosys
+        text: Infosys migrates to SQL server 2016
+        url: https://customers.microsoft.com/en-us/story/infosyssql,
+        logoUrl: https://mpbdevcontent.azureedge.net/Images/InfosysLogo.png,
+        logoAltText: Infosys
+    HollandAmerica:
+        title: Holland America
+        text: "Cruise Line Upgrades BI to Empower Users, Improve Guest Experience, Reduce IT Work"
+        url: https://customers.microsoft.com/en-us/story/cruise-line-upgrades-bi-to-empower-users-improve-guest
+        logoUrl: https://mpbdevcontent.azureedge.net/Images/HollandAmericaLogo.png
+        logoAltText: Holland America
 
 # Build settings
 markdown: kramdown
@@ -138,15 +135,3 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
